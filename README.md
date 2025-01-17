@@ -256,10 +256,10 @@ An advanced 8-bit RAM that allows simultaneous read and write operations on two 
 This project demonstrates the design and implementation of Single Port RAM and Dual Port RAM modules in Verilog, which are fundamental building blocks in digital systems. Both RAM modules showcase efficient memory read and write operations, with the Single Port RAM supporting a single access at a time, while the Dual Port RAM allows simultaneous read and write operations on two separate ports.
 
 # Key Takeaways from the Project:
-# -Single Port RAM:
+# Single Port RAM:
 The single-port RAM design highlights basic memory storage with simple read and write functionality. It emphasizes how data can be stored and retrieved using one address line, making it suitable for basic applications that require sequential access.
 
-# -Dual Port RAM:
+# Dual Port RAM:
 The dual-port RAM extends the concept by offering two independent access ports, enabling simultaneous operations. This design is particularly useful in systems like CPU-memory interaction, communication protocols, and multi-processing applications, where concurrent memory access is crucial.
 
 The project showcases practical Verilog coding techniques, including:
