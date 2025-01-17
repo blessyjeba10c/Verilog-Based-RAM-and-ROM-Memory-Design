@@ -126,6 +126,7 @@ Access Type: Single port for either read or write operations at one time.
 
 
 
+![Screenshot 2025-01-17 214229](https://github.com/user-attachments/assets/4faaedd1-8ac8-40b0-a8f5-5e0dc72b54cf)
 
 
 Dual Port RAM:
