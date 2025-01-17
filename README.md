@@ -7,10 +7,10 @@ This project demonstrates the implementation of memory modules—Single-Port RAM
 
 # Highlights of the Project:
 # 1.  RAM -
-    # -Single Port RAM:
+    -Single Port RAM:
     A basic 8-bit RAM with a total of 64 memory locations, supporting single read and write operations using a single address line.
     
-    # -Dual Port RAM:
+    -Dual Port RAM:
     An advanced 8-bit RAM that allows simultaneous read and write operations on two separate ports, making it ideal for complex digital designs that require concurrent access to memory.
 
 # 2. ROM - 
