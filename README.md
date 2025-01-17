@@ -132,12 +132,13 @@ A basic 8-bit RAM with a total of 64 memory locations, supporting single read an
 # Dual Port RAM:
 An advanced 8-bit RAM that allows simultaneous read and write operations on two separate ports, making it ideal for complex digital designs that require concurrent access to memory.
 
-64 x 8-bit Dual-Port RAM:
-Address Width: 6 bits.
-Memory Locations: 2^6 = 64
-Data Width: 8 bits (1 byte per location).
-Total Memory Size: 64×8 = 512 bits or 64 bytes
-Dual-Port: Two independent ports allow simultaneous read/write operations.
+### 64 x 8-bit Single-Port RAM Module
+
+**Address Width**: 6 bits  
+**Memory Locations**: 2^6 = 64  
+**Data Width**: 8 bits (1 byte per location)  
+**Total Memory Size**: 64 × 8 = 512 bits or 64 bytes  
+**Access Type**: Dual port for either read or write operations at one time.
 
 # Dual Port RAM module design - Verilog Code
 
