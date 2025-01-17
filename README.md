@@ -22,11 +22,11 @@ This project demonstrates the implementation of memory modules—Single-Port RAM
 A basic 8-bit RAM with a total of 64 memory locations, supporting single read and write operations using a single address line.
 
 64 x 8-bit Single-Port RAM:
-Address Width: 6 bits.
-Memory Locations: 2^6 = 64
-Data Width: 8 bits (1 byte per location).
-Total Memory Size: 64×8 = 512 bits or 64 bytes
-Access Type: Single port for either read or write operations at one time.
+                Address Width: 6 bits./n
+                Memory Locations: 2^6 = 64 /n
+                Data Width: 8 bits (1 byte per location).
+                Total Memory Size: 64×8 = 512 bits or 64 bytes
+                Access Type: Single port for either read or write operations at one time.
 
 # Single Port RAM module design - Verilog Code
 
