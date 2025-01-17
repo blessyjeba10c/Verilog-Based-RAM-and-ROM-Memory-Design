@@ -16,14 +16,12 @@ This project demonstrates the implementation of memory modules—Single-Port RAM
 # 2. ROM - 
 
 
-Testbenches: Comprehensive testbenches simulate and verify the functionality of both RAM and ROM modules.
-Waveform Analysis: The project includes sample waveform files to help visualize the operation of memory modules.
 
 
-Single Port RAM:
+# Single Port RAM:
 A basic 8-bit RAM with a total of 64 memory locations, supporting single read and write operations using a single address line.
 
-# 64 x 8-bit Single-Port RAM:
+64 x 8-bit Single-Port RAM:
 Address Width: 6 bits.
 Memory Locations: 2^6 = 64
 Data Width: 8 bits (1 byte per location).
@@ -125,12 +123,13 @@ Access Type: Single port for either read or write operations at one time.
     endmodule
 
 
+# Waveform Analysis:
 
 ![Screenshot 2025-01-17 214229](https://github.com/user-attachments/assets/4faaedd1-8ac8-40b0-a8f5-5e0dc72b54cf)
 
 
-Dual Port RAM:
-    An advanced 8-bit RAM that allows simultaneous read and write operations on two separate ports, making it ideal for complex digital designs that require concurrent access to memory.
+# Dual Port RAM:
+An advanced 8-bit RAM that allows simultaneous read and write operations on two separate ports, making it ideal for complex digital designs that require concurrent access to memory.
 
 64 x 8-bit Dual-Port RAM:
 Address Width: 6 bits.
@@ -245,21 +244,22 @@ Dual-Port: Two independent ports allow simultaneous read/write operations.
     endmodule
     
 # Waveform Analysis:
+![image](https://github.com/user-attachments/assets/8436f696-b003-483e-afed-52218f0a8a11)
+
 
 
  
 
-Conclusion
+# Conclusion
 This project demonstrates the design and implementation of Single Port RAM and Dual Port RAM modules in Verilog, which are fundamental building blocks in digital systems. Both RAM modules showcase efficient memory read and write operations, with the Single Port RAM supporting a single access at a time, while the Dual Port RAM allows simultaneous read and write operations on two separate ports.
 
-Key Takeaways from the Project:
+# Key Takeaways from the Project:
 # -Single Port RAM:
 The single-port RAM design highlights basic memory storage with simple read and write functionality. It emphasizes how data can be stored and retrieved using one address line, making it suitable for basic applications that require sequential access.
 
 # -Dual Port RAM:
 The dual-port RAM extends the concept by offering two independent access ports, enabling simultaneous operations. This design is particularly useful in systems like CPU-memory interaction, communication protocols, and multi-processing applications, where concurrent memory access is crucial.
 
-Verilog Coding:
 The project showcases practical Verilog coding techniques, including:
 1. Structural design of RAM modules.
 2. Use of always blocks to describe memory behavior.
