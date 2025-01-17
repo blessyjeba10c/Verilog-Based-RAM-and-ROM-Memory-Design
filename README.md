@@ -1,6 +1,6 @@
 # Verilog-Based-RAM-and-ROM-Memory-Design
 # Project Title:
-Memory Design in Verilog: Single-Port RAM and ROM
+Memory Design in Verilog: Single-Port and Dual Port RAM and ROM
 
 # Project Overview:
 This project demonstrates the implementation of memory modules—Single-Port RAM and ROM—in Verilog HDL. These modules are essential for building digital systems, as RAM provides read/write capabilities while ROM stores predefined data for read-only access.
