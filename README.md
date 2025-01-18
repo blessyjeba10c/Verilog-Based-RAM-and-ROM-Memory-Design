@@ -14,7 +14,9 @@ This project demonstrates the implementation of memory modules—Single-Port RAM
     An advanced 8-bit RAM that allows simultaneous read and write operations on two separate ports, making it ideal for complex digital designs that require concurrent access to memory.
 
 # 2. ROM - 
-
+1. It refers to computer memory chips containing permanent or semi-permanent data.
+2. Unlike RAM, ROM is non-volatile; even after you turn off your computer, the contents of ROM will remain.
+3. Almost every computer comes with a small amount of ROM containing the boot firmware.
 
 
 
@@ -261,6 +263,12 @@ An advanced 8-bit RAM that allows simultaneous read and write operations on two 
 ![image](https://github.com/user-attachments/assets/8436f696-b003-483e-afed-52218f0a8a11)
 
 
+# ROM (READ ONLY MEMORY)
+ROM stands for Read-Only Memory, which is a type of computer memory that stores permanent data and instructions. ROM is non-volatile, it retains data even when the computer is off. 
+
+### 8 X 8 Bit ROM Module - Representation
+
+![Screenshot 2025-01-18 133021](https://github.com/user-attachments/assets/1c37abb2-80c3-4dd3-bea1-448b78d81246)
 
  
 
