@@ -376,6 +376,10 @@ ROM stands for Read-Only Memory, which is a type of computer memory that stores 
       
     endmodule  
 
+# RTL Analysis:
+
+![image](https://github.com/user-attachments/assets/a7ba71b6-99b3-49d5-8040-30afc10c7008)
+
 # Waveform Analysis:
 
 ![Screenshot 2025-01-18 145254](https://github.com/user-attachments/assets/ad18d64f-070b-441a-9aa5-79bf7b6d36ad)
