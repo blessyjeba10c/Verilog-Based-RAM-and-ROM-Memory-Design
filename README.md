@@ -29,6 +29,12 @@ A basic 8-bit RAM with a total of 64 memory locations, supporting single read an
 **Total Memory Size**: 64 × 8 = 512 bits or 64 bytes  
 **Access Type**: Single port for either read or write operations at one time.
 
+### 64 x 8-bit Single-Port RAM Module - Representation
+
+![Screenshot 2025-01-18 125844](https://github.com/user-attachments/assets/470d4e6c-29ce-4c91-b3cd-417279ca0a9f)
+
+
+
 # Single Port RAM module design - Verilog Code
 
 
@@ -139,6 +145,12 @@ An advanced 8-bit RAM that allows simultaneous read and write operations on two 
 **Data Width**: 8 bits (1 byte per location)  
 **Total Memory Size**: 64 × 8 = 512 bits or 64 bytes  
 **Access Type**: Dual port for either read or write operations at one time.
+
+### 64 x 8-bit Dual-Port RAM Module - Representation
+
+![Screenshot 2025-01-18 125909](https://github.com/user-attachments/assets/7ba81900-1d77-4034-a60d-8130bbe342e1)
+
+
 
 # Dual Port RAM module design - Verilog Code
 
