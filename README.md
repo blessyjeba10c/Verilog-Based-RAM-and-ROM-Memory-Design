@@ -270,7 +270,115 @@ ROM stands for Read-Only Memory, which is a type of computer memory that stores 
 
 ![Screenshot 2025-01-18 133021](https://github.com/user-attachments/assets/1c37abb2-80c3-4dd3-bea1-448b78d81246)
 
- 
+# R0M module design - Verilog Code
+
+  
+    module rom (
+      input clk, //clk
+      input en, //enable
+      input [3:0] addr, //address
+      output reg [3:0] data //output data
+    );
+      
+      reg [3:0] mem [15:0]; //4 bit data and 16 locations
+      
+      always @ (posedge clk) 
+        begin
+          if (en)
+            data <= mem[addr];
+          else 
+            data <= 4'bxxxx;
+        end
+      
+      //initialing everal locations
+      initial 
+        begin    
+          mem[0] = 4'b0010;
+          mem[1] = 4'b0010;
+          mem[2] = 4'b1110;
+          mem[3] = 4'b0010;
+          mem[4] = 4'b0100;
+          mem[5] = 4'b1010;
+          mem[6] = 4'b1100;
+          mem[7] = 4'b0000;
+          mem[8] = 4'b1010;
+          mem[9] = 4'b0010;
+          mem[10] = 4'b1110;
+          mem[11] = 4'b0010;
+          mem[12] = 4'b0100;
+          mem[13] = 4'b1010;
+          mem[14] = 4'b1100;
+          mem[15] = 4'b0000;
+        end    
+    
+    endmodule
+
+# R0M module design - TestBench Code
+
+// ROM testbench
+    
+    module rom_tb;
+      reg clk; //clk
+      reg en; //enable
+      reg [3:0] addr; //address
+      wire [3:0] data; //output data
+      
+      rom r1(
+        .clk(clk),
+        .en(en),
+        .addr(addr),
+        .data(data)
+      );
+      
+      initial
+        begin
+          $dumpfile("dump.vcd");
+          $dumpvars(1, rom_tb);       
+          
+          clk=1'b1;
+          forever #5 clk = ~clk;
+        end
+      
+      initial
+        begin
+          en = 1'b0;
+          #10;                  
+          
+          en = 1'b1;      
+          addr = 4'b1010;
+          #10;
+          
+          addr = 4'b0110;
+          #10;
+          
+          addr = 4'b0011;
+          #10;
+          
+          en = 1'b0;
+          addr = 4'b1111;
+          #10;
+                
+          en = 1'b1;
+          addr = 4'b1000;
+          #10;
+          
+          addr = 4'b0000;
+          #10;
+          
+          addr = 4'bxxxx;
+          #10;
+        end
+      
+      initial
+        begin
+          #80 $stop;
+        end
+      
+    endmodule  
+
+# Waveform Analysis:
+
+![Screenshot 2025-01-18 145254](https://github.com/user-attachments/assets/ad18d64f-070b-441a-9aa5-79bf7b6d36ad)
 
 # Conclusion
 This project demonstrates the design and implementation of Single Port RAM and Dual Port RAM modules in Verilog, which are fundamental building blocks in digital systems. Both RAM modules showcase efficient memory read and write operations, with the Single Port RAM supporting a single access at a time, while the Dual Port RAM allows simultaneous read and write operations on two separate ports.
